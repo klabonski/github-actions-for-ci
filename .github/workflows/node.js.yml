@@ -35,7 +35,6 @@ name: Node CI
 on: [push]
 
 jobs:
-
 build:
   runs-on: ubuntu-latest
   steps:
@@ -44,7 +43,6 @@ build:
       run: |
         npm install
         npm run build
-
 test:
   runs-on: ubuntu-latest
   strategy:
